@@ -35,16 +35,16 @@
   border: 2px solid var(--accent-color);
 }
 
-.a {
+.header__link {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   margin-bottom: 20px;
   text-decoration: none;
   color: var(--accent-color);
 }
 
-.h1 {
+.header__title {
   text-transform: uppercase;
-  font-size: clamp(18px, 2.5vw, 23px);
+  font-size: clamp(14px, 2.5vw, 23px);
   margin-bottom: 22px;
 }
 
@@ -52,7 +52,7 @@
   border: none;
   outline: none;
   background-color: transparent;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
   margin-left: 15px;
   position: relative;
   font-size: 14px;
@@ -75,17 +75,14 @@
   color: var(--accent-color);
 }
 
-.theme-menu__button:hover,
-.theme-menu__button:disabled {
-  opacity: 0.6;
-}
+.theme-menu__button:hover {
+cursor: pointer;
+      opacity: 0.6;
+    }
 
 .theme-menu__button:disabled {
   pointer-events: none;
-}
-
-.theme-menu__button:hover {
-  cursor: pointer;
+      opacity: 0.6;
 }
 
 .theme-menu__button:after {
@@ -176,8 +173,7 @@
   padding: 0;
 }
 
-.modal-window__button,
-.card__like-button {
+.button-common  {
   cursor: pointer;
   position: relative;
   display: flex;
@@ -215,16 +211,12 @@
   outline: none;
 }
 
-.modal-window__button:focus,
-.card__like-button:focus,
-.save__button:focus {
+.button-common:focus {
   outline: none;
   box-shadow: 2px 2px 0px 0px var(--accent-color);
 }
 
-.modal-window__button:before,
-.card__like-button:before,
-.save__button:before {
+.button-common:before {
   content: "";
   position: absolute;
   top: 0;
@@ -235,9 +227,7 @@
   transition: 0.5s ease-in-out;
 }
 
-.modal-window__button:hover:before,
-.card__like-button:hover:before,
-.save__button:hover:before {
+.button-common:hover:before {
   width: 100%;
 }
 
@@ -363,7 +353,7 @@
 }
 
 dialog::backdrop {
-  background-color: rgb(0 0 0 / 0.8);
+  background-color: rgba(0, 0, 0, 0.75);
 } 
 
 @media (width <= 476px) {
