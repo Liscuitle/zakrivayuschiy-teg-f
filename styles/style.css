@@ -3,7 +3,7 @@
   min-block-size: 100dvb;
   padding-top: 102px;
   font-family: var(--main-font), sans-serif;
-  font-variation-settings: "wgth" var(--main-card-font-weight);
+  font-variation-settings: "wgth" var(--main-card-font-weight);  
   color: var(--accent-color);
   font-size: 18px;
 }
@@ -147,7 +147,7 @@
 }
 
 .card__item_text {
-  margin-bottom: 27px;
+  margin-bottom: 23px;
 }
 .card__item_text:last-child {
   margin-bottom: 0;
@@ -158,10 +158,15 @@
   font-size: 18px;
   font-weight: 785;
   border-bottom: 2px solid var(--accent-color);
+  font-variation-settings: "wght" 785;
+}
+.dark-theme .card__title {
+  font-variation-settings: "wght" 785;
 }
 
 .theme-light .card__title {
   font-weight: bold;
+  font-variation-settings: "wght" 700;
 }
 .card__item-body {
   width: 100%;
